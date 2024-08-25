@@ -1,5 +1,5 @@
 /* ./assets/js/script.js */
-const apiKey = 'e8efeb5803f89864bf46736564e7198a';
+const apiKey = '64ef5d8094c2e3e0ad74384e0f191188';
 const cityForm = document.getElementById('city-form');
 const cityInput = document.getElementById('city-input');
 const currentWeatherEl = document.getElementById('current-weather');
@@ -72,7 +72,6 @@ searchHistoryEl.addEventListener('click', (event) => {
     }
 });
 
-// Initial load for predefined cities
 ['Atlanta', 'New York', 'Los Angeles', 'Chicago', 'Houston', 'Phoenix', 'Philadelphia', 'San Antonio'].forEach(city => {
     const li = document.createElement('li');
     li.textContent = city;
@@ -80,5 +79,5 @@ searchHistoryEl.addEventListener('click', (event) => {
     searchHistoryEl.appendChild(li);
 });
 
-// Load Atlanta weather data by default
+
 fetchWeatherData('Atlanta');
